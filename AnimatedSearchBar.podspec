@@ -10,7 +10,7 @@ s.source = { :git => 'https://github.com/luiyezheng/JLStickerTextView.git', :tag
 
 s.ios.deployment_target = '8.0'
 
-s.source_files = 'Source/*.swift'
+s.source_files = 'Source'
 
 s.requires_arc = false
 end
