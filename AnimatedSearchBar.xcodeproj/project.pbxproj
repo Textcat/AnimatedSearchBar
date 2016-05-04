@@ -13,7 +13,7 @@
 		1877B6BB1CD9F3DF00B3CF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1877B6BA1CD9F3DF00B3CF9D /* Assets.xcassets */; };
 		1877B6BE1CD9F3DF00B3CF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1877B6BC1CD9F3DF00B3CF9D /* LaunchScreen.storyboard */; };
 		1877B6C91CD9F3DF00B3CF9D /* AnimatedSearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877B6C81CD9F3DF00B3CF9D /* AnimatedSearchBarTests.swift */; };
-		1877B6D51CD9F42200B3CF9D /* AnimatedSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877B6D41CD9F42200B3CF9D /* AnimatedSearchBar.swift */; };
+		1877B6D71CDA28AC00B3CF9D /* AnimatedSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877B6D61CDA28AC00B3CF9D /* AnimatedSearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		1877B6C41CD9F3DF00B3CF9D /* AnimatedSearchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedSearchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877B6C81CD9F3DF00B3CF9D /* AnimatedSearchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSearchBarTests.swift; sourceTree = "<group>"; };
 		1877B6CA1CD9F3DF00B3CF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1877B6D41CD9F42200B3CF9D /* AnimatedSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSearchBar.swift; sourceTree = "<group>"; };
+		1877B6D61CDA28AC00B3CF9D /* AnimatedSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedSearchBar.swift; path = Source/AnimatedSearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 		1877B6D31CD9F40F00B3CF9D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				1877B6D41CD9F42200B3CF9D /* AnimatedSearchBar.swift */,
+				1877B6D61CDA28AC00B3CF9D /* AnimatedSearchBar.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			files = (
 				1877B6B61CD9F3DF00B3CF9D /* ViewController.swift in Sources */,
 				1877B6B41CD9F3DF00B3CF9D /* AppDelegate.swift in Sources */,
-				1877B6D51CD9F42200B3CF9D /* AnimatedSearchBar.swift in Sources */,
+				1877B6D71CDA28AC00B3CF9D /* AnimatedSearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +402,7 @@
 				1877B6CF1CD9F3DF00B3CF9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1877B6D01CD9F3DF00B3CF9D /* Build configuration list for PBXNativeTarget "AnimatedSearchBarTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +411,7 @@
 				1877B6D21CD9F3DF00B3CF9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
