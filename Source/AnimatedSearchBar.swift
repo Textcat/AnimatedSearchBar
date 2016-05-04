@@ -12,7 +12,7 @@ import UIKit
 public class AnimatedSearchBar: UISearchBar, UIGestureRecognizerDelegate {
     
     private lazy var tapRecognizer: UITapGestureRecognizer! = {
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(AnimatedSearchBar.drawOutlier))
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(AnimatedSearchBar.drawoutline))
         tapRecognizer.delegate = self
         return tapRecognizer
         
@@ -28,17 +28,17 @@ public class AnimatedSearchBar: UISearchBar, UIGestureRecognizerDelegate {
     private var searchImageTwo: UIImage? = UIImage(named: "search1")
     
     @IBInspectable public var duration: CGFloat? = 0.45
-    @IBInspectable public var outlierColor: UIColor? = UIColor.blackColor()
+    @IBInspectable public var outlineColor: UIColor? = UIColor.blackColor()
     
     init() {
         super.init(frame: CGRectZero)
     }
     
-    init(frame: CGRect, duration: CGFloat, outlierColor: UIColor) {
+    init(frame: CGRect, duration: CGFloat, outlineColor: UIColor) {
         super.init(frame: frame)
         
         self.duration = duration
-        self.outlierColor = outlierColor
+        self.outlineColor = outlineColor
     }
     
     override init(frame: CGRect) {
@@ -97,10 +97,10 @@ public class AnimatedSearchBar: UISearchBar, UIGestureRecognizerDelegate {
         return index
     }
     
-    func drawOutlier() {
+    func drawoutline() {
         
     //MARK: -
-    //MARK: draw outlier
+    //MARK: draw outline
         let path = UIBezierPath()
         path.moveToPoint(CGPointMake(bounds.maxX, bounds.minY))
         path.addLineToPoint(CGPointMake(bounds.minX + 5, bounds.minY))
@@ -110,7 +110,7 @@ public class AnimatedSearchBar: UISearchBar, UIGestureRecognizerDelegate {
         
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = UIBezierPath(roundedRect: path.bounds, cornerRadius: 20.0).CGPath
-        shapeLayer.strokeColor = outlierColor!.CGColor
+        shapeLayer.strokeColor = outlineColor!.CGColor
         shapeLayer.fillColor = nil
         shapeLayer.lineWidth = 1.0
         shapeLayer.lineJoin = kCALineJoinBevel
@@ -170,7 +170,7 @@ public class AnimatedSearchBar: UISearchBar, UIGestureRecognizerDelegate {
         
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = UIBezierPath(roundedRect: path.bounds, cornerRadius: 20.0).CGPath
-        shapeLayer.strokeColor = outlierColor!.CGColor
+        shapeLayer.strokeColor = outlineColor!.CGColor
         shapeLayer.fillColor = nil
         shapeLayer.lineWidth = 1.0
         shapeLayer.lineJoin = kCALineJoinBevel
