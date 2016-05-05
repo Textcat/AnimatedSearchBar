@@ -27,7 +27,7 @@ public class AnimatedSearchBar: UISearchBar, UIGestureRecognizerDelegate {
     private var searchImageOne: UIImage? = UIImage(named: "search")
     private var searchImageTwo: UIImage? = UIImage(named: "search1")
     
-    @IBInspectable public var duration: CGFloat = 0.45
+    @IBInspectable public var duration: CGFloat? = 0.45
     @IBInspectable public var outlineColor: UIColor? = UIColor.blackColor()
     
     init() {
@@ -118,7 +118,7 @@ public class AnimatedSearchBar: UISearchBar, UIGestureRecognizerDelegate {
         layer.addSublayer(self.pathLayer)
         
         let pathAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        pathAnimation.duration = NSTimeInterval(duration)
+        pathAnimation.duration = NSTimeInterval(duration!)
         pathAnimation.fromValue = 0.0
         pathAnimation.toValue = 1.0
         self.pathLayer.addAnimation(pathAnimation, forKey: "strokeEnd")
@@ -132,14 +132,14 @@ public class AnimatedSearchBar: UISearchBar, UIGestureRecognizerDelegate {
         self.setImage(searchImageTwo, forSearchBarIcon: .Search, state: .Normal)
         
         let currentAdjustment = self.positionAdjustmentForSearchBarIcon(.Search)
-        UIView.animateWithDuration(NSTimeInterval(duration), animations: {() -> Void in
+        UIView.animateWithDuration(NSTimeInterval(duration!), animations: {() -> Void in
             self.setPositionAdjustment(UIOffsetMake(-self.bounds.width, currentAdjustment.vertical), forSearchBarIcon: .Search)
             }, completion: {(finished: Bool) -> Void in
             self.setPositionAdjustment(currentAdjustment, forSearchBarIcon: .Search)
             
         })
         
-        UIView.animateWithDuration(NSTimeInterval(duration)) {
+        UIView.animateWithDuration(NSTimeInterval(duration!)) {
             self.layoutIfNeeded()
         }
         

@@ -1,0 +1,6 @@
+framework module AnimatedSearchBar {
+  umbrella header "AnimatedSearchBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9DFA809198460D553E00406A'
-               BlueprintName = 'Pods'
+               BlueprintIdentifier = 'F086679FFD29CDA81B7D06CE'
+               BlueprintName = 'AnimatedSearchBar'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods.framework'>
+               BuildableName = 'AnimatedSearchBar.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
