@@ -1,3 +1,0 @@
-use_frameworks!
-pod “AnimatedSearchBar”, :git =>
-"https://github.com/luiyezheng/AnimatedSearchBar.git"
