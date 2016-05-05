@@ -1,6 +1,6 @@
 ##About 
 AnimatedSearchBar is an animated Search Bar, stretch out and in according to editing state.
-![](https://github.com/luiyezheng/AnimatedSearchBar/blob/master/animatete.gif)
+![](https://github.com/luiyezheng/AnimatedSearchBar/blob/master/animatetete.gif)
 
 ##feature
 * Animated Search Bar, stretch out and in according to editing state
