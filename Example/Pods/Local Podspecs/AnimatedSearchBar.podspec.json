@@ -1,0 +1,19 @@
+{
+  "name": "AnimatedSearchBar",
+  "version": "0.1",
+  "license": "MIT",
+  "summary": "a tiny Animated Search Bar",
+  "homepage": "https://github.com/luiyezheng/JLStickerTextView",
+  "authors": {
+    "luiyezheng": "luiyezheng@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/luiyezheng/JLStickerTextView.git",
+    "tag": "0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Source",
+  "requires_arc": false
+}

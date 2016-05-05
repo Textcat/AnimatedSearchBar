@@ -1,0 +1,19 @@
+PODS:
+  - AnimatedSearchBar (0.1)
+
+DEPENDENCIES:
+  - AnimatedSearchBar (from `https://github.com/luiyezheng/AnimatedSearchBar.git`)
+
+EXTERNAL SOURCES:
+  AnimatedSearchBar:
+    :git: https://github.com/luiyezheng/AnimatedSearchBar.git
+
+CHECKOUT OPTIONS:
+  AnimatedSearchBar:
+    :commit: 5ac11e327dc4162874b182b95931f8d552a3862d
+    :git: https://github.com/luiyezheng/AnimatedSearchBar.git
+
+SPEC CHECKSUMS:
+  AnimatedSearchBar: ed66d32dfa63b992498c51a0a916c9ed16664ad3
+
+COCOAPODS: 0.39.0
